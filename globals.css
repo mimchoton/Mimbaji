@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --primary: 160 84% 29%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 142 76% 36%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 0 0% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 0 0% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 160 84% 39%;
+    --primary-foreground: 144 61% 5%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217 33% 17%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 160 84% 39%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom styles for Baji.live clone */
+.baji-header {
+  background-color: #188260;
+}
+
+.baji-nav {
+  background-color: #0d2b79;
+}
+
+.baji-footer {
+  background-color: #2f3135;
+}
+
+.baji-gradient {
+  background: linear-gradient(to right, #188260, #1b5eaf);
+}
+
+/* Font sizes */
+.text-xxs {
+  font-size: 0.65rem;
+  line-height: 1rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+/* Added custom colors */
+.text-baji-green {
+  color: #188260;
+}
+
+.text-baji-blue {
+  color: #1b5eaf;
+}
+
+.bg-baji-green {
+  background-color: #188260;
+}
+
+.bg-baji-blue {
+  background-color: #1b5eaf;
+}
+
+.bg-baji-dark {
+  background-color: #0d2b79;
+}
+
+.border-baji-green {
+  border-color: #188260;
+}
+
+/* Special button styles */
+.btn-register {
+  background-color: #f9a01b;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-login {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+/* Image adjustments */
+.sponsor-image {
+  max-height: 30px;
+  object-fit: contain;
+}
+
+/* Layout helpers */
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Override default focus styles */
+*:focus {
+  outline: none;
+}
